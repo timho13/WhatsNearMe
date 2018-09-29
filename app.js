@@ -1,10 +1,12 @@
 const http = require('http'); //declare module for server create.
 const fs = require('fs'); // declare module for file operations.
+var dt = require('./utilities');
 const port=process.env.PORT || 3000 // declare port for heroku.
 // initialise variables for page creation.
-var header="<html><head></head>";
+var header="<html><head></head><body>";
+var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
 var footer="</body></html>";
-var data=header;
+var data=header+pageinfo;
 // next 2 instructions could be looped through list of REST parameters.
 fs.readFile('demofile1.html', function(err, data1) {
   data=data+data1; 
