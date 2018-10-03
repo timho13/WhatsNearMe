@@ -6,6 +6,7 @@
 <div id="wrap">
     <iframe src="demofile2.html"/>
 </div>
+<div id="wrap1">
 <iframe id="FileFrame" src="about:blank"></iframe>
 <script type="text/javascript">
 var doc = document.getElementById('FileFrame').contentWindow.document;
@@ -13,5 +14,6 @@ doc.open();
 doc.write('<html><head><title></title></head><body>Hello world.</body></html>');
 doc.close();
 </script>
+</div>
 
 </body>
