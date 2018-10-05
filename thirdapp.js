@@ -14,7 +14,7 @@ fs.readFile('index_head.html', function(err, data1) {
 });
 
 fs.readFile('index_body.html', function(err, data2) {
-  data=data+data1+footer;
+  data=data+data2+footer;
 });
 // next instruction appears to be ignored by heroku.
 //fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
