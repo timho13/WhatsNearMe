@@ -7,7 +7,7 @@ var headertop="<html><head>";
 var headerbot="</head><body>";
 //var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
 var footer="</body></html>";
-var data="headertop";
+var data=headertop;
 // next 2 instructions could be looped through list of REST parameters.
 fs.readFile('index_head.html', function(err, data1) {
   data=data+data1+headerbot;
