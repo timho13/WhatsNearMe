@@ -8,7 +8,7 @@ var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.c
 var footer="</body></html>";
 var data="";
 // next 2 instructions could be looped through list of REST parameters.
-fs.readFile('index.html', function(err, data1) {
+fs.readFile('w3s_css.html', function(err, data1) {
   data=data+data1;
 });
 // next instruction appears to be ignored by heroku.
