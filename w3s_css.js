@@ -10,7 +10,7 @@ var data=headertop;
 fs.readFile('index_head.html', function(err, data1) {
   data=data+data1+headerbot;
 });
-
+//remove this comment
 fs.readFile('index_body.html', function(err, data2) {
   data=data+data2+footer;
 });
