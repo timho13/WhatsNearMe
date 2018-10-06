@@ -2,9 +2,9 @@
 "name": "coolnodeapp",
 "version": "1.0.0",
 "description": "node app ",
-"main": "app.js",
+"main": "whatsnearme.js",
 "scripts": {
-"start": "node app.js"
+"start": "node whatsnearme.js"
 },
 "repository": {
 "type": "git",

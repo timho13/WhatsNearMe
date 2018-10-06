@@ -8,8 +8,7 @@ var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.c
 var footer="</body></html>";
 var data=header+pageinfo;
 // next 2 instructions could be looped through list of REST parameters.
-  data=data+footer
-});
+  data=data+footer;
 // next instruction appears to be ignored by heroku.
 fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
   if (err) throw err;
