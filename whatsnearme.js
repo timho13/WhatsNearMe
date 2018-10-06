@@ -8,6 +8,30 @@ var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.c
 var footer="</body></html>";
 var data=header+pageinfo;
 // next 2 instructions could be looped through list of REST parameters.
+fs.readFile('a1_open_form.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('b1_open_map_frameset.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('b2_close_frameset.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('c1_open_item_playing_frameset.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('b2_close_frameset.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('d1_open_actions_frameset.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('b2_close_frameset.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('a2_close_form.html', function(err, data1) {
+  data=data+data1;
+});
   data=data+footer;
 // next instruction appears to be ignored by heroku.
 fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
