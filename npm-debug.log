@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   '--save' ]
+2 info using npm@1.2.11
+3 info using node@v0.8.21
+4 verbose read json /home/tm470/repo/explore/sandbox/whatsnearme/package.json
+5 verbose from cache /home/tm470/repo/explore/sandbox/whatsnearme/package.json
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'express', null ]
+8 verbose cache add name=undefined spec="express" args=["express",null]
+9 verbose parsed url { pathname: 'express', path: 'express', href: 'express' }
+10 silly lockFile f3c62de4-express express
+11 verbose lock express /home/tm470/.npm/f3c62de4-express.lock
+12 silly lockFile f3c62de4-express express
+13 silly lockFile f3c62de4-express express
+14 verbose addNamed [ 'express', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 64a534c1-express express@
+17 verbose lock express@ /home/tm470/.npm/64a534c1-express.lock
+18 silly addNameRange { name: 'express', range: '', hasData: false }
+19 verbose url raw express
+20 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+21 verbose url resolved https://registry.npmjs.org/express
+22 info trying registry request attempt 1 at 12:46:43
+23 http GET https://registry.npmjs.org/express
+24 silly lockFile 64a534c1-express express@
+25 silly lockFile 64a534c1-express express@
+26 error Error: SSL Error: CERT_UNTRUSTED
+26 error     at ClientRequest.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:525:26)
+26 error     at ClientRequest.g (events.js:192:14)
+26 error     at ClientRequest.EventEmitter.emit (events.js:96:17)
+26 error     at HTTPParser.parserOnIncomingClient [as onIncoming] (http.js:1582:7)
+26 error     at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23)
+26 error     at CleartextStream.socketOnData [as ondata] (http.js:1485:20)
+26 error     at CleartextStream.CryptoStream._push (tls.js:544:27)
+26 error     at SecurePair.cycle (tls.js:898:20)
+26 error     at EncryptedStream.CryptoStream.write (tls.js:285:13)
+26 error     at Socket.ondata (stream.js:38:26)
+27 error If you need help, you may report this log at:
+27 error     <http://github.com/isaacs/npm/issues>
+27 error or email it to:
+27 error     <npm-@googlegroups.com>
+28 error System Linux 4.9.35-v7+
+29 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "express" "--save"
+30 error cwd /home/tm470/repo/explore/sandbox/whatsnearme
+31 error node -v v0.8.21
+32 error npm -v 1.2.11
+33 error code ESSL
+34 verbose exit [ 1, true ]
