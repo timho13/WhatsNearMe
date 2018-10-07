@@ -5,7 +5,6 @@ const port=process.env.PORT || 3000 // declare port for heroku.
 // initialise variables for page creation.
 var pagecode="<html><head></head><body>";
 var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
-var footer="</body></html>";
 pagecode+=pageinfo;
 var body_code_list = {
     a: 'a1_open_form.html',
@@ -18,12 +17,11 @@ var body_code_list = {
     h: 'a2_close_form.html'
 };
 for (var filetoread in body_code_list){
-fs.readFile(body_code_list[filetoread], function(err, data1) {
-  pagecode=pagecode+data1;
-});
+    fs.readFile(body_code_list[filetoread], function(err, data1) {
+      pagecode+=data1;
+    });
 };
-
-pagecode=pagecode+footer;
+pagecode+="</body></html>";
 // server responds.
 var server = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
