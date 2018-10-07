@@ -11,8 +11,8 @@ var data=header+pageinfo;
 var body_code_list={
     a: "a1_open_form.html",
     b: "b1_open_map_frameset.html"
-}
-var filetoread="a1_open_form.html",
+};
+var filetoread="a1_open_form.html";
 fs.readFile(filetoread, function(err, data1) {
   data=data+data1;
 });
