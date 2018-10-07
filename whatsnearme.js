@@ -8,13 +8,13 @@ var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.c
 //var body_code="";
 var footer="</body></html>";
 var data=header+pageinfo;
-var body_code_list={
-    a: a1_open_form.html,
-    b: b1_open_map_frameset.html,
-    c: b2_close_frameset.html
+var body_code_list = {
+    a: 'a1_open_form.html',
+    b: 'b1_open_map_frameset.html',
+    c: 'b2_close_frameset.html'
 };
 for (var filetoread in body_code_list){
-fs.readFile(filetoread, function(err, data1) {
+fs.readFile(body_code_list[filetoread], function(err, data1) {
   data=data+data1;
 });
 };
