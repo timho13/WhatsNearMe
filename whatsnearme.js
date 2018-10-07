@@ -12,15 +12,11 @@ var body_code_list={
     a: "a1_open_form.html",
     b: "b1_open_map_frameset.html"
 };
-var filetoread="a1_open_form.html";
+for var filetoread in body_code_list{
 fs.readFile(filetoread, function(err, data1) {
   data=data+data1;
 });
-filetoread="b1_open_map_frameset.html"
-fs.readFile(filetoread, function(err, data1) {
-  data=data+data1;
-});
-
+};
 
 fs.readFile('c1_open_item_playing_frameset.html', function(err, data1) {
   data=data+data1;
