@@ -17,7 +17,7 @@ var body_code_list = {
     f: 'd1_open_actions_frameset.html',
     g: 'b2_close_frameset.html',
     h: 'a2_close_form.html'
-});
+};
 for (var filetoread in body_code_list){
 fs.readFile(body_code_list[filetoread], function(err, data1) {
   data=data+data1;
