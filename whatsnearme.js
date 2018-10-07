@@ -1,10 +1,11 @@
 const http = require('http'); //declare module for server create.
 const fs = require('fs'); // declare module for file operations.
-const dt = require('./utilities');
+//const dt = require('./utilities');
 const port=process.env.PORT || 3000 // declare port for heroku.
-var pagecode="<html><head></head><body>";
-pagecode+="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
+var pagecode="";
+//pagecode+="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
 var body_code_list = {
+  z: 'a0_top_of_html.html'
   a: 'a1_open_form.html',
   b: 'b1_open_map_frameset.html',
   c: 'b2_close_frameset.html',
