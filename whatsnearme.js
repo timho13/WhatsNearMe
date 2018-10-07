@@ -5,18 +5,19 @@ const port=process.env.PORT || 3000 // declare port for heroku.
 // initialise variables for page creation.
 var header="<html><head></head><body>";
 var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
+var body_code="";
 var footer="</body></html>";
 var data=header+pageinfo;
-// next 2 instructions could be looped through list of REST parameters.
-fs.readFile('a1_open_form.html', function(err, data1) {
+var body_code_list={
+    a: "a1_open_form.html",
+    b: "b1_open_map_frameset.html"
+}
+for var filetoread in body_code_list{
+
+fs.readFile(filetoread, function(err, data1) {
   data=data+data1;
 });
-fs.readFile('b1_open_map_frameset.html', function(err, data1) {
-  data=data+data1;
-});
-fs.readFile('b2_close_frameset.html', function(err, data1) {
-  data=data+data1;
-});
+}
 fs.readFile('c1_open_item_playing_frameset.html', function(err, data1) {
   data=data+data1;
 });
