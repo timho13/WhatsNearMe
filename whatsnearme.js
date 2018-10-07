@@ -6,7 +6,7 @@ const port=process.env.PORT || 3000 // declare port for heroku.
 var pagecode="<html><head></head><body>";
 var pageinfo="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
 var footer="</body></html>";
-var pagecode+=pageinfo;
+pagecode+=pageinfo;
 var body_code_list = {
     a: 'a1_open_form.html',
     b: 'b1_open_map_frameset.html',
