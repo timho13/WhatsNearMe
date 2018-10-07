@@ -13,7 +13,7 @@ var body_code_list={
     b: "b1_open_map_frameset.html",
     c: "b2_close_frameset.html"
 };
-for var filetoread in body_code_list{
+for (var filetoread in body_code_list){
 fs.readFile(filetoread, function(err, data1) {
   data=data+data1;
 });
