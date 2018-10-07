@@ -17,12 +17,12 @@ fs.readFile('b1_open_map_frameset.html', function(err, data1) {
 fs.readFile('b2_close_frameset.html', function(err, data1) {
   data=data+data1;
 });
-//fs.readFile('c1_open_item_playing_frameset.html', function(err, data1) {
-//  data=data+data1;
-//});
-//fs.readFile('b2_close_frameset.html', function(err, data1) {
-//  data=data+data1;
-//});
+fs.readFile('c1_open_item_playing_frameset.html', function(err, data1) {
+  data=data+data1;
+});
+fs.readFile('b2_close_frameset.html', function(err, data1) {
+  data=data+data1;
+});
 fs.readFile('d1_open_actions_frameset.html', function(err, data1) {
   data=data+data1;
 });
@@ -33,10 +33,6 @@ fs.readFile('a2_close_form.html', function(err, data1) {
   data=data+data1;
 });
   data=data+footer;
-// next instruction appears to be ignored by heroku.
-fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
-  if (err) throw err;
-  console.log('Saved!');
 });
 // server responds.
 var server = http.createServer(function (req, res) {

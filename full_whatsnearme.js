@@ -32,12 +32,7 @@ fs.readFile('b2_close_frameset.html', function(err, data1) {
 fs.readFile('a2_close_form.html', function(err, data1) {
   data=data+data1;
 });
-  data=data+footer
-});
-// next instruction appears to be ignored by heroku.
-fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
-  if (err) throw err;
-  console.log('Saved!');
+  data=data+footer;
 });
 // server responds.
 var server = http.createServer(function (req, res) {
