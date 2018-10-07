@@ -33,7 +33,6 @@ fs.readFile('a2_close_form.html', function(err, data1) {
   data=data+data1;
 });
   data=data+footer;
-});
 // server responds.
 var server = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
