@@ -1,3 +1,4 @@
- <fieldset style="height: 30%">
+<fieldset style="height: 30%">
   <legend>Actions</legend>
   <p> <button class="button button4">Start</button></p>
+</fieldset>

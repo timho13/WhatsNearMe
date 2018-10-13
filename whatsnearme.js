@@ -5,14 +5,11 @@ const port=process.env.PORT || 3000 // declare port for heroku.
 var pagecode="";
 var html_code_array = [
   'a0_top_of_html.txt',
-  'a1_open_form.html',
-  'b1_open_map_frameset.html',
-  'b2_close_frameset.html',
-  'c1_open_item_playing_frameset.html',
-  'b2_close_frameset.html',
-  'd1_open_actions_frameset.html',
-  'b2_close_frameset.html',
-  'a2_close_form.html'
+  'a1_open_form.txt',
+  'b1_open_map_frameset.txt',
+  'c1_open_item_playing_frameset.txt',
+  'd1_open_actions_frameset.txt',
+  'a2_close_form.txt'
 ];
 html_code_array.forEach(function(item, index, array){
   fs.readFile(item, function(err, data1) {

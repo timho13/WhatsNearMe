@@ -1,3 +1,4 @@
-<fieldset style="height: 40%">
+fieldset style="height: 40%">
   <legend>Map</legend>
   <p>Map goes here</p>
+</fieldset>
