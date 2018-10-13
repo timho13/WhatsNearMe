@@ -19,8 +19,8 @@ for (var filetoread in body_code_list){
     pagecode+=data1;
   });
 };
-pagecode+="</div><div>Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
-pagecode+="</div></body></html>";
+pagecode+="Last refresh: "+dt.myDateTime()+"</br>"+"<a href='https://github.com/timho13/WhatsNearMe'>Github</a>"+"</br>";
+pagecode+="</body></html>";
 // server responds.
 var server = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
