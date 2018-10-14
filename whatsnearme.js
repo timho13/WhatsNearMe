@@ -12,7 +12,7 @@ var html_code_array = [
   'a2_close_form.txt'
 ];
 html_code_array.forEach(function(item, index, array){
-  fs.readFile(item, function(err, data1) {
+  fs.readFile(item, 'utf8', function(err, data1) {
     pagecode+=data1;
   });
 });
