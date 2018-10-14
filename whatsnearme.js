@@ -17,9 +17,6 @@ html_code_array.forEach(function(item, index, array){
   });
 });
 pagecode+="</body></html>";
-function headstyle(){
-    return "<!DOCTYPE html><html><head><meta charset='UTF-8'/><style>p {font-size: 14px;}</style></head><body>";
-}
 // server responds.
 var server = http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
@@ -30,3 +27,6 @@ var server = http.createServer(function (req, res) {
 server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
+function headstyle(){
+    return "<!DOCTYPE html><html><head><meta charset='UTF-8'/><style>p {font-size: 14px;}</style></head><body>";
+}
