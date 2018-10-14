@@ -4,7 +4,6 @@ const dt = require('./utilities');
 const port=process.env.PORT || 3000 // declare port for heroku.
 var pagecode=headstyle();
 var html_code_array = [
-//  'a0_top_of_html.txt',
   'a1_open_form.txt',
   'b1_open_map_frameset.txt',
   'c1_open_item_playing_frameset.txt',
@@ -28,17 +27,16 @@ server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
 function headstyle(){
-    return `<!DOCTYPE html>
-<html>
-  <head>
-<meta charset='UTF-8'/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    return `<!DOCTYPE html><html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
   /* Mobile Styles */
   @media only screen and (max-width: 414px) {
     body {
