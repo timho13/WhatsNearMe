@@ -28,5 +28,13 @@ server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
 function headstyle(){
-    return "<!DOCTYPE html><html><head><meta charset='UTF-8'/><style>p {font-size: 14px;}</style></head><body>";
+    return "<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <style>
+      p {font-size: 14px;}
+    </style>
+  </head>
+  <body>";
 }
