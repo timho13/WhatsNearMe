@@ -37,54 +37,52 @@ function headstyle(){
       padding: 0;
       box-sizing: border-box;
     }
-  /* Mobile Styles */
-  @media only screen and (max-width: 414px) {
-    body {
-      background-color: #000000;
+    /* mobile styles */
+    @media only screen and (max-width: 414px) {
+      body {
+        background-color: #000000;
+      }
     }
-  }
-  /* Tablet & Desktop Styles */
-  @media only screen and (min-width: 415px) {
-    body {
-      background-color: #B2D6FF; /* Blue */
+    /* tablet & desktop styles */
+    @media only screen and (min-width: 415px) {
+      body {
+        background-color: #b2d6ff; /* blue */
         width: 414px;
+      }
     }
-  }
-  body {
-    color: blue;
-  }
-  form {
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    padding: 20px;
-    background-color: #FFFFFF;
-  }
-  div {
-    display: block;
-  }
-  p {
-    font-size: 14px;
-  }
-
-  .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-
-  .button1 {border-radius: 2px;}
-  .button2 {border-radius: 4px;}
-  .button3 {border-radius: 8px;}
-  .button4 {border-radius: 12px;}
-  .button5 {border-radius: 50%;}
-</style>
+    body {
+      color: blue;
+    }
+    form {
+      border-radius: 25px;
+      border: 2px solid #73ad21;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    div {
+      display: block;
+    }
+    p {
+      font-size: 14px;
+    }
+    .button {
+      background-color: #4caf50; /* green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .button1 {border-radius: 2px;}
+    .button2 {border-radius: 4px;}
+    .button3 {border-radius: 8px;}
+    .button4 {border-radius: 12px;}
+    .button5 {border-radius: 50%;}
+  </style>
 </head>
-  <body>`;
+<body>`;
 };
