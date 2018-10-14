@@ -28,7 +28,7 @@ server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
 function headstyle(){
-    return "<!DOCTYPE html>
+    return `<!DOCTYPE html>
 <html>
   <head>
     <meta charset='UTF-8'/>
@@ -36,5 +36,5 @@ function headstyle(){
       p {font-size: 14px;}
     </style>
   </head>
-  <body>";
+  <body>`;
 }
