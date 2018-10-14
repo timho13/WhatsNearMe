@@ -4,7 +4,7 @@ const dt = require('./utilities');
 const port=process.env.PORT || 3000 // declare port for heroku.
 var pagecode="<!DOCTYPE html><html><head><meta charset='UTF-8'/><style>p {font-size: 14px;}</style></head><body>";
 var html_code_array = [
-  'a0_top_of_html.txt',
+//  'a0_top_of_html.txt',
   'a1_open_form.txt',
   'b1_open_map_frameset.txt',
   'c1_open_item_playing_frameset.txt',
