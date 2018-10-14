@@ -17,7 +17,7 @@ html_code_array.forEach(function(item, index, array){
   });
 });
 pagecode+="</body></html>";
-function headstyle{
+function headstyle(){
     return "<!DOCTYPE html><html><head><meta charset='UTF-8'/><style>p {font-size: 14px;}</style></head><body>";
 }
 // server responds.
