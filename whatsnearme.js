@@ -55,9 +55,7 @@ var pagecode="<!DOCTYPE html><html><head><meta charset='UTF-8'/>
   .button1 {border-radius: 2px;}
   .button2 {border-radius: 4px;}
   .button3 {border-radius: 8px;}
-  .button4 {border-radius: 12px;}
-  .button5 {border-radius: 50%;}
-</style></head><body>";
+  .button4 {border-radius: 12px;} .button5 {border-radius: 50%;}</style></head><body>";
 var html_code_array = [
   'a1_open_form.txt',
   'b1_open_map_frameset.txt',
