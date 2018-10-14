@@ -2,7 +2,7 @@ const http = require('http'); //declare module for server create.
 const fs = require('fs'); // declare module for file operations.
 const dt = require('./utilities');
 const port=process.env.PORT || 3000 // declare port for heroku.
-var pagecode="";
+var pagecode="<!DOCTYPE html><html><head><meta charset='UTF-8'/><style>p {font-size: 14px;}</style></head><body>";
 var html_code_array = [
   'a0_top_of_html.txt',
   'a1_open_form.txt',
