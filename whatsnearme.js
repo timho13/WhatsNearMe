@@ -12,7 +12,7 @@ var html_code_array = [
   'd1_open_actions_frameset.txt',
   'a2_close_form.txt'
 ];
-get-code();
+getcode();
 pagecode+="</body></html>";
 // server responds.
 var server = http.createServer(function (req, res) {
@@ -24,10 +24,8 @@ var server = http.createServer(function (req, res) {
 server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
-function get-code(){
+function getcode(){
 html_code_array.forEach(function(item, index, array){
   pagecode+=fs.readFileSync(item, 'utf8');
 });
-
-
 };
