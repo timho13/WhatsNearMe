@@ -15,9 +15,7 @@ var html_code_array = [
   'a2_close_form.txt'
 ];
 html_code_array.forEach(function(item, index, array){
-  fs.readFile(item, 'utf8', function(err, data1) {
-    pagecode+=data1;
-  });
+  pagecode+=fs.readFileSync(item, 'utf8');
 });
 pagecode+="</body></html>";
 // server responds.
