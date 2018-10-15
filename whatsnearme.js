@@ -2,9 +2,9 @@ const http = require('http'); //declare module for server create.
 const fs = require('fs'); // declare module for file operations.
 const dt = require('./utilities');
 const port=process.env.PORT || 3000 // declare port for heroku.
-var pagecode="<!DOCTYPE html><html><head><meta charset='UTF-8'/><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>"+""
+var pagecode="<!DOCTYPE html><html><head><meta charset='UTF-8'/><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>";
 pagecode+=fs.readFileSync("css_styles.css", 'utf8');
-pagecode+=""+"</style></head><body>";
+pagecode+="</style></head><body>";
 //var pagecode=headstyle();
 var html_code_array = [
   'a1_open_form.txt',
