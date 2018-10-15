@@ -12,7 +12,7 @@ var = body_code_array [
   'd1_open_actions_frameset.txt',
   'a2_close_form.txt'
 ];
-getcode(body_code_array);
+getcode('body_code_array');
 pagecode+="</body></html>";
 // server responds.
 var server = http.createServer(function (req, res) {
