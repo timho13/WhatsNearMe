@@ -3,10 +3,7 @@ const fs = require('fs'); // declare module for file operations.
 const dt = require('./utilities');
 const port=process.env.PORT || 3000 // declare port for heroku.
 var pagecode="<!DOCTYPE html><html><head><meta charset='UTF-8'/><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>"+"\`"
-
-fs.readFile("css_styles.css", 'utf8', function(err, data1) {
-    pagecode+=data1;
-  });
+pagecode+=fs.readFileSync("css_styles.css", 'utf8');
 
 pagecode+="\`"+"</style></head><body>";
 //var pagecode=headstyle();
