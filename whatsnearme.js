@@ -9,8 +9,6 @@ var head_code_array = [
   'static/pagecode/ac_headtobody.txt'
 ];
 getcode(head_code_array);
-//pagecode+=fs.readFileSync("css_styles.css", 'utf8');
-//pagecode+="</style></head><body>";
 var body_code_array = [
   'static/pagecode/ba_open_form.txt',
   'static/pagecode/bb_open_map_frameset.txt',
