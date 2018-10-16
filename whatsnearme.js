@@ -8,7 +8,6 @@ var head_code_array = [
   'static/pagecode/aa_open_html.txt'
 ];
 getcode(head_code_array);
-getcode(body_code_array);
 pagecode+=fs.readFileSync("css_styles.css", 'utf8');
 pagecode+="</style></head><body>";
 var body_code_array = [
