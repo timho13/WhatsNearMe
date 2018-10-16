@@ -7,10 +7,10 @@ pagecode+=fs.readFileSync("css_styles.css", 'utf8');
 pagecode+="</style></head><body>";
 var body_code_array = [
   'static/pagecode/ba_open_form.txt',
-  'b1_open_map_frameset.txt',
-  'c1_open_item_playing_frameset.txt',
-  'd1_open_actions_frameset.txt',
-  'a2_close_form.txt'
+  'static/pagecode/bb_open_map_frameset.txt',
+  'static/pagecode/bc_open_item_playing_frameset.txt',
+  'static/pagecode/bd_open_actions_frameset.txt',
+  'static/pagecode/be_close_form.txt'
 ];
 getcode(body_code_array);
 pagecode+="</body></html>";
