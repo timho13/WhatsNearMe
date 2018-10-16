@@ -6,7 +6,7 @@ var pagecode="<!DOCTYPE html><html><head><meta charset='UTF-8'/><meta name='view
 pagecode+=fs.readFileSync("css_styles.css", 'utf8');
 pagecode+="</style></head><body>";
 var body_code_array = [
-  'a1_open_form.txt',
+  'static/a1_open_form.txt',
   'b1_open_map_frameset.txt',
   'c1_open_item_playing_frameset.txt',
   'd1_open_actions_frameset.txt',
