@@ -1,4 +1,6 @@
 <fieldset style="height: 30%">
   <legend>Actions</legend>
-  <p> <button class="button button4">Start</button></p>
+  <div>
+    <p> <button class="button button4">Start</button></p>
+  <\div>
 </fieldset>
