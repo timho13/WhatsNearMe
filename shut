@@ -3,6 +3,6 @@
 git add .
 git commit -m 'Commit at shutdown'
 # git commit .vimrc -m 'Commit at shutdown'
-git push --repo=https://github.com/timho13/WhatsNearMe.git/
+git push --repo=https://timho13@github.com/timho13/WhatsNearMe.git/
 echo "For pi, please enter ..."
 su - pi -c "sudo shutdown -r now"
