@@ -1,5 +1,5 @@
-<fieldset style="height: 15%">
-  <legend>An app for sharing about places</legend>
+<fieldset style="height: 11%">
+  <legend>An app for sharing info about places</legend>
   <div>
     <h1>WhatsNearMe</h1>
   </div>
