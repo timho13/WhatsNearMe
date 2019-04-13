@@ -2,5 +2,5 @@
   <legend>Actions</legend>
   <div>
     <p> <button class="button button4">Start</button></p>
-  <\div>
+  </div>
 </fieldset>
