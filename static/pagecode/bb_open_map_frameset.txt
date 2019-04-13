@@ -1,8 +1,8 @@
 <fieldset style="height: 15%">
   <legend>An app for sharing about places</legend>
   <div>
-    <h1>WhatsNearMe<\h1>
-  <\div>
+    <h1>WhatsNearMe</h1>
+  </div>
 </fieldset>
 
 <fieldset style="height: 40%">
