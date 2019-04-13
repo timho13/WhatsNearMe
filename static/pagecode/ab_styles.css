@@ -3,12 +3,14 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     /* mobile styles */
     @media only screen and (max-width: 414px) {
       body {
         background-color: #000000;
       }
     }
+
     /* tablet & desktop styles */
     @media only screen and (min-width: 415px) {
       body {
@@ -16,35 +18,83 @@
         width: 414px;
       }
     }
+
     body {
       color: blue;
     }
+
     form {
       border-radius: 25px;
       border: 2px solid #73ad21;
       padding: 20px;
       background-color: #ffffff;
     }
+
     div {
       display: block;
     }
+
     p {
       font-size: 14px;
     }
-    .button {
-      background-color: #4caf50; /* green */
-      border: none;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    .button1 {border-radius: 2px;}
-    .button2 {border-radius: 4px;}
-    .button3 {border-radius: 8px;}
-    .button4 {border-radius: 12px;}
-    .button5 {border-radius: 50%;}
+
+
+    .buttonGeneral{
+        background: lightgray;
+          display: inline;
+            margin-left: 8px;
+              padding: 4px 8px;
+                border-radius: 5px;
+              }
+
+              section {
+                  border: none;
+                    display: inline;
+                      margin-left: 8px;
+                        padding: 4px 8px;
+                          width: 40px;
+                            height: 40px
+                          }
+
+                          .start{
+                            background: green;
+                              width: 99px;
+
+                            }
+
+                            .silent{
+
+                            }
+
+                            .pause{
+
+                            }
+
+                            .skip{
+
+                            }
+
+                            .exit{
+
+                            }
+
+                            .back{
+
+                            }
+
+                            .play{
+
+                            }
+
+                            .up{
+
+                            }
+
+                            .down{
+
+                            }
+
+                            .back{
+
+                            }
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+# git commit repo/explore/sandbox/whatsnearme -m 'Commit at shutdown'
+git add .
+git commit -m 'Commit without  shutdown'
+git push --repo=https://timho13@github.com/timho13/WhatsNearMe.git/

@@ -1,4 +1,12 @@
+<fieldset style="height: 15%">
+  <legend>An app for sharing about places</legend>
+  <div>
+    <h1>WhatsNearMe<\h1>
+  <\div>
+</fieldset>
+
 <fieldset style="height: 40%">
   <legend>Map</legend>
   <p>Map goes in this box</p>
 </fieldset>
+
