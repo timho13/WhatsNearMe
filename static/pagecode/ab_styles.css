@@ -34,9 +34,15 @@
       display: block;
     }
 
-frameset legend {
-   font-size: 9px:
-}
+fieldset { border:1px solid green }
+
+legend {
+  padding: 0.2em 0.5em;
+  border:1px solid green;
+  color:green;
+  font-size:90%;
+  text-align:right;
+  }
 
 h1 {
    color: black;
