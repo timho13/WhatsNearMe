@@ -37,10 +37,11 @@
 fieldset { border:1px solid blue }
 
 legend {
-  padding: 0.8em 0.5em;
+  padding: 0.2em 0.5em;
   border:0px solid green;
   color:blue;
   font-size:60%;
+  float:left;
   }
 
 h1 {
