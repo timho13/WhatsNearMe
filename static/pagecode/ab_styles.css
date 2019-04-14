@@ -41,7 +41,7 @@ legend {
   border:0px solid green;
   color:blue;
   font-size:60%;
-  float:left;
+  align:left;
   }
 
 h1 {
