@@ -34,19 +34,18 @@
       display: block;
     }
 
-fieldset { border:1px solid green }
+fieldset { border:1px solid blue }
 
 legend {
   padding: 0.2em 0.5em;
-  border:1px solid green;
+  border:0px solid green;
   color:green;
-  font-size:90%;
-  text-align:right;
+  font-size:60%;
   }
 
 h1 {
    color: black;
-   font-size: 99px:
+   font-size: 119px:
 }
     p {
       font-size: 14px;
